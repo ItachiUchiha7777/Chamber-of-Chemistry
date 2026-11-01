@@ -1,0 +1,289 @@
+/* ==========================================================================
+   CHAMBER OF CHEMISTRY (COC) — RESPONSIVE DESIGN & ACCESSIBILITY
+   Breakpoints:
+     - Large Desktop: > 1200px
+     - Tablet / Small Laptop: <= 1024px
+     - Tablet Portrait: <= 768px
+     - Mobile Phone: <= 480px
+   ========================================================================== */
+
+/* Tablet & Smaller Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 2.85rem;
+  }
+  
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-metrics {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero-visual {
+    height: 420px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .founder-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .founder-photo-container {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .founder-floating-badge {
+    text-align: left;
+  }
+
+  .credentials-grid {
+    max-width: 600px;
+    margin: 0 auto 32px auto;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid .why-card:first-child {
+    grid-column: span 2;
+  }
+
+  .molecule-viewer-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .molecule-selector-panel {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .mol-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .academic-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet Portrait & Large Phones (<= 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 84px);
+    background: var(--color-white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px var(--container-padding);
+    gap: 20px;
+    box-shadow: var(--shadow-lg);
+    transform: translateX(100%);
+    transition: transform var(--transition-normal);
+    overflow-y: auto;
+    z-index: 999;
+  }
+
+  .site-header.dark-mode-header .nav-menu {
+    background: #0F1E2E;
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--color-navy) !important;
+  }
+
+  .site-header.dark-mode-header .nav-link {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white) !important;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .hero {
+    padding: 130px 0 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mol-list {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .academic-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+/* Mobile Small (<= 480px) */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 16px;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid .why-card:first-child {
+    grid-column: span 1;
+  }
+
+  .contact-form-container {
+    padding: 24px 18px;
+  }
+
+  .intro-quote-card {
+    padding: 24px 18px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .floating-molecule-pill {
+    display: none;
+  }
+}
+
+/* Accessibility & Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cocGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D07E" />
+      <stop offset="50%" stop-color="#D5A84B" />
+      <stop offset="100%" stop-color="#A67B22" />
+    </linearGradient>
+    <linearGradient id="cocBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2D6F91" />
+    </linearGradient>
+    <linearGradient id="cocNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18324B" />
+      <stop offset="100%" stop-color="#0E1F30" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Hexagonal Molecular Icon Group -->
+  <g transform="translate(15, 10)">
+    <!-- Subtle outer orbital ring -->
+    <ellipse cx="50" cy="50" rx="46" ry="18" fill="none" stroke="#2D6F91" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6" transform="rotate(-30 50 50)" />
+    <ellipse cx="50" cy="50" rx="46" ry="18" fill="none" stroke="#D5A84B" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.6" transform="rotate(30 50 50)" />
+    
+    <!-- Benzene Hexagon -->
+    <polygon points="50,14 82,32 82,68 50,86 18,68 18,32" fill="none" stroke="url(#cocGold)" stroke-width="3.5" stroke-linejoin="round" />
+    <!-- Inner delocalized resonance circle -->
+    <circle cx="50" cy="50" r="20" fill="none" stroke="url(#cocBlue)" stroke-width="2.5" stroke-dasharray="5,3" />
+
+    <!-- Core Central Atom -->
+    <circle cx="50" cy="50" r="7" fill="url(#cocGold)" filter="url(#glow)" />
+    
+    <!-- Outer Node Atoms -->
+    <circle cx="50" cy="14" r="4.5" fill="#38BDF8" />
+    <circle cx="82" cy="32" r="4" fill="#D5A84B" />
+    <circle cx="82" cy="68" r="4.5" fill="#38BDF8" />
+    <circle cx="50" cy="86" r="4" fill="#D5A84B" />
+    <circle cx="18" cy="68" r="4.5" fill="#38BDF8" />
+    <circle cx="18" cy="32" r="4" fill="#D5A84B" />
+
+    <!-- Orbital electron spheres -->
+    <circle cx="86" cy="36" r="2.5" fill="#F2D07E" />
+    <circle cx="14" cy="64" r="2.5" fill="#38BDF8" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(135, 26)">
+    <!-- Brand Name Line 1: CHAMBER OF -->
+    <text x="0" y="28" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="5" fill="#2D6F91" text-transform="uppercase">
+      CHAMBER OF
+    </text>
+
+    <!-- Brand Name Line 2: CHEMISTRY -->
+    <text x="0" y="58" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="32" font-weight="900" letter-spacing="3" fill="#18324B">
+      CHEMISTRY
+    </text>
+
+    <!-- Decorative Gold Accent Line -->
+    <line x1="0" y1="67" x2="260" y2="67" stroke="url(#cocGold)" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Tagline -->
+    <text x="0" y="82" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="#D5A84B" text-transform="uppercase">
+      Quality Education for All
+    </text>
+  </g>
+</svg>

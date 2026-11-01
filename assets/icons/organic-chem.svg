@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="orgGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="100%" stop-color="#D5A84B" />
+    </linearGradient>
+    <linearGradient id="orgBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#2D6F91" />
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="38" fill="#18324B" />
+  <polygon points="40,16 60,28 60,52 40,64 20,52 20,28" fill="rgba(45,111,145,0.25)" stroke="url(#orgGold)" stroke-width="2.5" stroke-linejoin="round" />
+  <circle cx="40" cy="40" r="14" fill="none" stroke="url(#orgBlue)" stroke-width="2" stroke-dasharray="4,3" />
+  <!-- Functional group branches -->
+  <line x1="40" y1="16" x2="40" y2="8" stroke="url(#orgGold)" stroke-width="2" />
+  <circle cx="40" cy="8" r="3" fill="#38BDF8" />
+  <line x1="60" y1="52" x2="68" y2="57" stroke="url(#orgGold)" stroke-width="2" />
+  <circle cx="70" cy="58" r="3" fill="#FFE082" />
+  <!-- Resonance arrow -->
+  <path d="M 28 35 Q 40 28 52 35" fill="none" stroke="#FFE082" stroke-width="1.8" stroke-linecap="round" marker-end="url(#arrow)" />
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="c11Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#18324B" />
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="38" fill="#18324B" />
+  <!-- Bohr Orbitals -->
+  <ellipse cx="40" cy="40" rx="26" ry="10" fill="none" stroke="#38BDF8" stroke-width="2" transform="rotate(-30 40 40)" />
+  <ellipse cx="40" cy="40" rx="26" ry="10" fill="none" stroke="#D5A84B" stroke-width="2" transform="rotate(30 40 40)" />
+  <ellipse cx="40" cy="40" rx="26" ry="10" fill="none" stroke="#93C5FD" stroke-width="1.5" stroke-dasharray="3,3" transform="rotate(90 40 40)" />
+  <!-- Center Nucleus -->
+  <circle cx="40" cy="40" r="7" fill="#D5A84B" />
+  <!-- Electrons -->
+  <circle cx="58" cy="28" r="3" fill="#38BDF8" />
+  <circle cx="22" cy="52" r="3" fill="#FFE082" />
+  <circle cx="40" cy="14" r="2.5" fill="#38BDF8" />
+</svg>

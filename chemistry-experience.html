@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>3D Chemistry Lab &amp; Interactive Periodic Table | Chamber of Chemistry</title>
+  <meta name="title" content="3D Chemistry Lab &amp; Interactive Periodic Table | Chamber of Chemistry" />
+  <meta name="description" content="Explore real 3D chemical molecules (Benzene, H2O, CH4, Aspirin), an interactive 118-element periodic table, and Everyday Chemistry insights at Chamber of Chemistry." />
+  <meta name="keywords" content="3D Molecules Three.js, Interactive Periodic Table, Benzene 3D Model, Chemistry Lab Online, Everyday Chemistry, Chamber of Chemistry" />
+  <meta name="author" content="Aarushi Kasturiwal, Chamber of Chemistry" />
+  <link rel="canonical" href="https://chamberofchemistry.com/chemistry-experience.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chamberofchemistry.com/chemistry-experience.html" />
+  <meta property="og:title" content="3D Chemistry Lab &amp; Interactive Periodic Table" />
+  <meta property="og:description" content="Discover molecular structures and element chemistry through real interactive 3D simulations." />
+  <meta property="og:image" content="https://chamberofchemistry.com/assets/images/logo.svg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body style="background-color: #0A1622; color: #FFFFFF;">
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="site-header dark-mode-header scrolled" id="main-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="nav-brand" aria-label="Chamber of Chemistry Home">
+          <img src="assets/images/logo-light.svg" alt="Chamber of Chemistry Logo" class="nav-logo" />
+        </a>
+
+        <ul class="nav-menu" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="chemistry-experience.html" class="nav-link active">Chemistry 3D Lab</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="blog.html" class="nav-link">Chemistry Corner</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="courses.html" class="btn btn-primary btn-sm">Start Learning</a>
+        </div>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Header Banner
+       ========================================================================== -->
+  <main style="padding-top: 100px;">
+    <section class="section-tight" style="background: radial-gradient(circle at 75% 20%, #1e4566 0%, #0d1e2e 70%, #060e17 100%); border-bottom: 1px solid rgba(255,255,255,0.08);">
+      <div class="container">
+        <div style="max-width: 820px;">
+          <span class="badge-tag navy-mode">Interactive Scientific Visuals</span>
+          <h1 class="section-title" style="color: #FFFFFF; font-size: 2.8rem; margin-bottom: 16px;">
+            Chemistry Visual Experience
+          </h1>
+          <p class="section-subtitle" style="color: #CBD5E1; font-size: 1.15rem;">
+            Step into the molecular realm. Explore real 3D spatial bonds, inspect the IUPAC periodic table of elements, and discover the chemical mechanisms shaping our daily world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section A: 3D Molecular Laboratory
+         ========================================================================== -->
+    <section class="section" id="3d-molecules" style="background-color: #0A1622;">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag navy-mode">Spatial Molecular Geometry</span>
+          <h2 class="section-title" style="color: #FFFFFF;">3D Molecular Structure Laboratory</h2>
+          <p class="section-subtitle" style="color: #94A3B8;">
+            Drag with your mouse or touch to rotate each molecule in 3D space. Scroll to zoom. Toggle between Ball &amp; Stick and Space-Filling models.
+          </p>
+        </div>
+
+        <!-- 3D Interactive Stage -->
+        <div class="molecule-viewer-stage">
+          <!-- Molecule Selection Panel -->
+          <div class="molecule-selector-panel">
+            <h3 class="panel-header-title">Select Molecule</h3>
+            <div class="panel-header-sub">Choose a molecule to load its 3D geometry:</div>
+
+            <div class="mol-list">
+              <button type="button" class="mol-option-btn active" data-mol="benzene">
+                <span class="mol-option-name">Benzene</span>
+                <span class="mol-option-formula">C₆H₆</span>
+              </button>
+
+              <button type="button" class="mol-option-btn" data-mol="water">
+                <span class="mol-option-name">Water</span>
+                <span class="mol-option-formula">H₂O</span>
+              </button>
+
+              <button type="button" class="mol-option-btn" data-mol="methane">
+                <span class="mol-option-name">Methane</span>
+                <span class="mol-option-formula">CH₄</span>
+              </button>
+
+              <button type="button" class="mol-option-btn" data-mol="co2">
+                <span class="mol-option-name">Carbon Dioxide</span>
+                <span class="mol-option-formula">CO₂</span>
+              </button>
+
+              <button type="button" class="mol-option-btn" data-mol="ethanol">
+                <span class="mol-option-name">Ethanol</span>
+                <span class="mol-option-formula">C₂H₅OH</span>
+              </button>
+
+              <button type="button" class="mol-option-btn" data-mol="aspirin">
+                <span class="mol-option-name">Aspirin</span>
+                <span class="mol-option-formula">C₉H₈O₄</span>
+              </button>
+            </div>
+
+            <!-- Representation Toggle -->
+            <div style="margin-top: auto; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+              <button type="button" class="btn btn-outline-blue btn-sm" id="toggle-space-fill" style="width: 100%; border-color: rgba(56, 189, 248, 0.4); color: var(--color-cyan);">
+                Switch to Space-Filling View
+              </button>
+            </div>
+          </div>
+
+          <!-- 3D Canvas Stage & Scientific Data Card -->
+          <div class="molecule-canvas-container">
+            <canvas id="molecule-canvas" aria-label="Interactive 3D molecule viewer. Drag to orbit, wheel to zoom."></canvas>
+
+            <!-- Scientific Properties Overlay -->
+            <div class="molecule-info-overlay">
+              <div class="mol-display-name" id="mol-name">Benzene</div>
+              <div class="mol-display-formula" id="mol-formula">C₆H₆</div>
+
+              <div class="mol-props-list">
+                <div class="mol-prop-row">
+                  <span>Molar Mass:</span>
+                  <span id="mol-mass">78.11 g/mol</span>
+                </div>
+                <div class="mol-prop-row">
+                  <span>Molecular Geometry:</span>
+                  <span id="mol-geometry">Planar Hexagonal (D₆h)</span>
+                </div>
+                <div class="mol-prop-row">
+                  <span>Hybridisation:</span>
+                  <span id="mol-hybridisation">sp² Carbon</span>
+                </div>
+                <div class="mol-prop-row">
+                  <span>Bond Angle:</span>
+                  <span id="mol-angle">120°</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 12px; font-size: 0.8rem; color: #CBD5E1; line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px;" id="mol-significance">
+                Fundamental aromatic hydrocarbon demonstrating cyclic delocalised π-electron resonance.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section B: Interactive Modern Periodic Table
+         ========================================================================== -->
+    <section class="section" id="periodic-table" style="background-color: #0F1E2E; border-top: 1px solid rgba(255,255,255,0.06);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag gold">IUPAC Classification</span>
+          <h2 class="section-title" style="color: #FFFFFF;">Interactive Periodic Table</h2>
+          <p class="section-subtitle" style="color: #94A3B8;">
+            Search and filter through the chemical elements. Click any element to view its electronic configuration, atomic mass, and real-world chemical applications.
+          </p>
+        </div>
+
+        <!-- Periodic Table Search & Filters -->
+        <div class="periodic-search-bar">
+          <span style="font-size: 1.1rem; color: #94A3B8;">🔍</span>
+          <input type="text" id="periodic-search" class="periodic-input" placeholder="Search by element name, symbol, or atomic number (e.g. Carbon, Fe, 26)..." aria-label="Search elements" />
+        </div>
+
+        <!-- Category Legend Buttons -->
+        <div class="periodic-legend">
+          <button type="button" class="btn btn-sm cat-filter-btn active" data-cat="all" style="background: rgba(255,255,255,0.08); color: #FFF; padding: 6px 14px;">All</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-alkali" data-cat="alkali" style="padding: 6px 14px;">Alkali Metals</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-alkaline" data-cat="alkaline" style="padding: 6px 14px;">Alkaline Earth</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-transition" data-cat="transition" style="padding: 6px 14px;">Transition Metals</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-post-trans" data-cat="post-trans" style="padding: 6px 14px;">Post-Transition</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-metalloid" data-cat="metalloid" style="padding: 6px 14px;">Metalloids</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-nonmetal" data-cat="nonmetal" style="padding: 6px 14px;">Non-Metals</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-halogen" data-cat="halogen" style="padding: 6px 14px;">Halogens</button>
+          <button type="button" class="btn btn-sm cat-filter-btn cat-noble" data-cat="noble" style="padding: 6px 14px;">Noble Gases</button>
+        </div>
+
+        <!-- Periodic Grid Container -->
+        <div class="ptable-container">
+          <div class="ptable-grid" id="periodic-table-grid">
+            <!-- Dynamically populated by periodic-table.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section C: Chemistry in Everyday Life & Green Science
+         ========================================================================== -->
+    <section class="section" style="background-color: #0A1622; border-top: 1px solid rgba(255,255,255,0.06);">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag navy-mode">Real-World Science</span>
+          <h2 class="section-title" style="color: #FFFFFF;">Chemistry in Everyday Life</h2>
+          <p class="section-subtitle" style="color: #94A3B8;">
+            Chemistry is not confined to laboratory flasks. Discover how molecular principles govern everyday life and eco-friendly technologies.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1: Green Corrosion Inhibition (Founder Research Specialty) -->
+          <div class="why-card" style="background: rgba(24, 50, 75, 0.4); border-color: rgba(56, 189, 248, 0.3);">
+            <div style="width: 100%; height: 160px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 16px; border: 1px solid rgba(56,189,248,0.2);">
+              <img 
+                src="assets/images/aarushi-titration-research.jpg" 
+                alt="Aarushi Kasturiwal performing quantitative chemical analysis and titration" 
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;" 
+                loading="lazy" 
+              />
+            </div>
+            <div class="why-icon-box" style="background: rgba(34, 197, 94, 0.2); color: #4ADE80;">🌿</div>
+            <h3 class="why-title" style="color: #FFFFFF;">Green Corrosion Inhibition</h3>
+            <p class="why-desc" style="color: #CBD5E1;">
+              Traditional synthetic corrosion inhibitors often contain toxic heavy metals. Research into <strong>green inhibitors</strong> uses biodegradable plant extracts and eco-friendly phytoconstituents that adsorb onto metal surfaces, creating protective organic monolayers against corrosive acid environments.
+            </p>
+          </div>
+
+          <!-- Card 2: Soap & Micelle Cleansing Action -->
+          <div class="why-card" style="background: rgba(24, 50, 75, 0.4); border-color: rgba(255, 255, 255, 0.1);">
+            <div class="why-icon-box" style="background: rgba(56, 189, 248, 0.2); color: var(--color-cyan);">🧼</div>
+            <h3 class="why-title" style="color: #FFFFFF;">Soap &amp; Micelle Duality</h3>
+            <p class="why-desc" style="color: #CBD5E1;">
+              Soaps are sodium or potassium salts of long-chain fatty acids with dual nature: a polar hydrophilic ionic head and a non-polar hydrophobic hydrocarbon tail. In water, tails cluster inward to trap non-polar grease, forming spherical micelles that rinse away easily.
+            </p>
+          </div>
+
+          <!-- Card 3: The Maillard Reaction -->
+          <div class="why-card" style="background: rgba(24, 50, 75, 0.4); border-color: rgba(213, 168, 75, 0.3);">
+            <div class="why-icon-box" style="background: rgba(213, 168, 75, 0.2); color: var(--color-warm-gold);">☕</div>
+            <h3 class="why-title" style="color: #FFFFFF;">The Maillard Reaction</h3>
+            <p class="why-desc" style="color: #CBD5E1;">
+              The irresistible aroma and golden crust of baked bread, roasted coffee, and seared food is caused by the <strong>Maillard reaction</strong>—a non-enzymatic condensation between amino acids and reducing sugars at elevated temperatures, generating hundreds of flavourful pyrazines and furans.
+            </p>
+          </div>
+
+          <!-- Card 4: Spectroscopic Characterisation -->
+          <div class="why-card" style="background: rgba(24, 50, 75, 0.4); border-color: rgba(255, 255, 255, 0.1);">
+            <div style="width: 100%; height: 160px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 16px; border: 1px solid rgba(213,168,75,0.2);">
+              <img 
+                src="assets/images/aarushi-smartboard-lecture.jpg" 
+                alt="Aarushi Kasturiwal explaining spectroscopic and inorganic test deductions" 
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" 
+                loading="lazy" 
+              />
+            </div>
+            <div class="why-icon-box" style="background: rgba(168, 85, 247, 0.2); color: #C084FC;">📊</div>
+            <h3 class="why-title" style="color: #FFFFFF;">Spectroscopic Fingerprints</h3>
+            <p class="why-desc" style="color: #CBD5E1;">
+              How do chemists know a synthesis succeeded? <strong>¹H NMR spectroscopy</strong> measures the magnetic environment of hydrogen nuclei, <strong>FTIR</strong> detects characteristic stretching frequencies of functional groups (like C=O or O–H), and <strong>UV–Vis</strong> measures electronic conjugate excitations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section D: Fascinating Chemistry Facts
+         ========================================================================== -->
+    <section class="section" style="background-color: #0F1E2E;">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag gold">Scientific Curiosity</span>
+          <h2 class="section-title" style="color: #FFFFFF;">Fascinating Chemistry Facts</h2>
+          <p class="section-subtitle" style="color: #94A3B8;">
+            Curious insights that illuminate the extraordinary behaviour of matter.
+          </p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="editorial-card" style="background: rgba(24, 50, 75, 0.4); border-color: rgba(255, 255, 255, 0.1);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🌡️</div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: #FFFFFF; margin-bottom: 8px;">Gallium Melts in Your Hand</h4>
+            <p style="font-size: 0.9rem; color: #CBD5E1; line-height: 1.6;">
+              Gallium (Ga, Atomic Number 31) has a melting point of just 29.76 °C (85.57 °F). Held in a human palm (average temperature 37 °C), the solid metallic crystal lattice readily collapses into liquid silvery metal!
+            </p>
+          </div>
+
+          <div class="editorial-card" style="background: rgba(24, 50, 75, 0.4); border-color: rgba(255, 255, 255, 0.1);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🌧️</div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: #FFFFFF; margin-bottom: 8px;">The Chemistry of Rain's Scent</h4>
+            <p style="font-size: 0.9rem; color: #CBD5E1; line-height: 1.6;">
+              The pleasant, earthy smell that accompanies the first rain on dry soil is called <em>petrichor</em>. It is primarily caused by <strong>Geosmin</strong>, a bicyclic organic alcohol produced by soil actinobacteria that human noses can detect at fractions of parts per trillion!
+            </p>
+          </div>
+
+          <div class="editorial-card" style="background: rgba(24, 50, 75, 0.4); border-color: rgba(255, 255, 255, 0.1);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">💎</div>
+            <h4 style="font-size: 1.15rem; font-weight: 800; color: #FFFFFF; margin-bottom: 8px;">The Allotropes of Carbon</h4>
+            <p style="font-size: 0.9rem; color: #CBD5E1; line-height: 1.6;">
+              Pure carbon can exist as soft, electrically conductive, slippery black graphite (sp² hybridised sheets) or as the hardest natural mineral known—transparent diamond (sp³ tetrahedral network)—illustrating the profound impact of 3D geometry on physical properties.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Element Details Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="element-modal" role="dialog" aria-modal="true" aria-labelledby="modal-el-heading">
+    <div class="modal-dialog" style="max-width: 580px;">
+      <div class="modal-header" style="background: var(--color-navy); color: #FFF; border-bottom: none;">
+        <div>
+          <span class="modal-el-num" style="font-size: 0.9rem; color: var(--color-cyan); font-weight: 700;">#6</span>
+          <h3 class="modal-title modal-el-name" id="modal-el-heading" style="color: #FFF; margin-top: 4px;">Carbon</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-element-modal" style="color: #FFF;" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 28px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-light);">
+          <div class="modal-el-symbol" style="font-size: 3rem; font-weight: 900; color: var(--color-navy); line-height: 1;">C</div>
+          <div style="text-align: right;">
+            <div class="modal-el-cat" style="font-size: 0.8rem; font-weight: 700; color: var(--color-academic-blue); text-transform: uppercase;">Non-Metal</div>
+            <div class="modal-el-mass" style="font-size: 1.1rem; font-weight: 800; color: var(--color-warm-gold-hover);">12.011 u</div>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px;">
+          <div style="background: var(--color-soft-grey); padding: 12px; border-radius: var(--radius-sm);">
+            <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Electron Configuration</span>
+            <div class="modal-el-config" style="font-family: var(--font-mono); font-size: 0.9rem; font-weight: 600; color: var(--color-navy);">[He] 2s² 2p²</div>
+          </div>
+          <div style="background: var(--color-soft-grey); padding: 12px; border-radius: var(--radius-sm);">
+            <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Periodic Position</span>
+            <div style="font-size: 0.9rem; font-weight: 600; color: var(--color-navy);"><span class="modal-el-group">Group 14</span>, <span class="modal-el-period">Period 2</span></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.85rem; font-weight: 800; color: var(--color-navy); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+            Everyday &amp; Chemical Significance:
+          </h4>
+          <p class="modal-el-app" style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6;">
+            The cornerstone of Organic Chemistry and all biochemical life forms.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <img src="assets/images/logo-light.svg" alt="Chamber of Chemistry" class="footer-logo" />
+          <p class="footer-brand-desc">
+            An educational initiative dedicated to making Chemistry engaging, understandable and accessible. Concept-based teaching, structured preparation and scientific curiosity for school and competitive examinations.
+          </p>
+          <div class="footer-tagline-badge">
+            Quality Education for All
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Chamber of Chemistry</a></li>
+            <li><a href="about.html#founder">Meet Aarushi Kasturiwal</a></li>
+            <li><a href="courses.html">Courses &amp; Batches</a></li>
+            <li><a href="chemistry-experience.html">3D Chemistry Lab</a></li>
+            <li><a href="resources.html">Free Study Resources</a></li>
+            <li><a href="blog.html">Chemistry Corner / Blog</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiry</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Learning Programmes</h4>
+          <ul class="footer-links-list">
+            <li><a href="courses.html#class-11">Class 11 Chemistry</a></li>
+            <li><a href="courses.html#class-12">Class 12 Chemistry</a></li>
+            <li><a href="courses.html#organic">Organic Chemistry Specialization</a></li>
+            <li><a href="courses.html#neet">NEET Chemistry Preparation</a></li>
+            <li><a href="courses.html#jee">JEE Chemistry Preparation</a></li>
+            <li><a href="chemistry-experience.html#periodic-table">Interactive Periodic Table</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Base</h4>
+          <p style="font-size: 0.92rem; color: #94A3B8; margin-bottom: 16px; line-height: 1.6;">
+            <strong>Chamber of Chemistry</strong><br />
+            Founder: Aarushi Kasturiwal<br />
+            Location: Dehradun, Uttarakhand, India<br />
+            Phone: <a href="tel:+918006350167" style="color: var(--color-warm-gold);">+91 8006350167</a>
+          </p>
+          <div class="social-links-row">
+            <a href="https://wa.me/918006350167" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Contact">
+              💬
+            </a>
+            <a href="https://www.youtube.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Chamber of Chemistry YouTube">
+              ▶
+            </a>
+            <a href="https://www.instagram.com" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Chamber of Chemistry Instagram">
+              📷
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Chamber of Chemistry (COC). All rights reserved. Founded by Aarushi Kasturiwal.
+        </div>
+        <div class="footer-legal-links">
+          <a href="about.html">Teaching Values</a>
+          <a href="contact.html">Student Support</a>
+          <a href="resources.html">Free Material</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/molecules.js"></script>
+  <script src="js/periodic-table.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 3D Molecule Renderer initialization
+      if (window.MoleculeRenderer && document.getElementById('molecule-canvas')) {
+        const molRenderer = new MoleculeRenderer('molecule-canvas', 'benzene');
+
+        // Molecule Switcher buttons
+        const optionBtns = document.querySelectorAll('.mol-option-btn');
+        optionBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            optionBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const molKey = btn.getAttribute('data-mol');
+            molRenderer.setMolecule(molKey);
+          });
+        });
+
+        // Space-filling toggle
+        const toggleBtn = document.getElementById('toggle-space-fill');
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', () => {
+            molRenderer.toggleSpaceFilling();
+            toggleBtn.textContent = molRenderer.isSpaceFilling ? 'Switch to Ball & Stick View' : 'Switch to Space-Filling View';
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>

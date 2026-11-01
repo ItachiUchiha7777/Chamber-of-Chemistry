@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /assets/models/
+
+Sitemap: https://chamberofchemistry.com/sitemap.xml

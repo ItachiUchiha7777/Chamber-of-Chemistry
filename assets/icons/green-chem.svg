@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <circle cx="40" cy="40" r="38" fill="#18324B" />
+  <!-- Protective Metal Shield -->
+  <path d="M40 16 L58 24 L58 42 C58 54 48 63 40 66 C32 63 22 54 22 42 L22 24 Z" fill="rgba(45,111,145,0.3)" stroke="#D5A84B" stroke-width="2" />
+  <!-- Green Botanical Leaf (Natural Inhibitor) -->
+  <path d="M40 26 C48 30 52 42 46 50 C42 55 36 55 34 50 C32 44 34 32 40 26 Z" fill="#22C55E" opacity="0.85" />
+  <path d="M38 48 Q 40 40 44 32" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+  <!-- Molecular adsorption nodes -->
+  <circle cx="28" cy="36" r="2.5" fill="#38BDF8" />
+  <circle cx="52" cy="36" r="2.5" fill="#38BDF8" />
+  <circle cx="40" cy="60" r="2.5" fill="#FFE082" />
+</svg>
