@@ -127,7 +127,7 @@
         if (course) text += ` I am interested in: ${course}.`;
         if (msg) text += ` Query: ${msg}`;
 
-        const waUrl = `https://wa.me/918006350167?text=${encodeURIComponent(text)}`;
+        const waUrl = `https://wa.me/6395328731?text=${encodeURIComponent(text)}`;
         window.open(waUrl, '_blank');
       });
     }

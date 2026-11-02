@@ -3,4 +3,4 @@ Allow: /
 Disallow: /scratch/
 Disallow: /assets/models/
 
-Sitemap: https://chamberofchemistry.com/sitemap.xml
+Sitemap: https://chambersofchemistry.vercel.app/sitemap.xml
