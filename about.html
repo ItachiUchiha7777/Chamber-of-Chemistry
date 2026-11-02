@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- SEO Primary Meta Tags -->
-  <title>About Chamber of Chemistry &amp; Founder Aarushi Kasturiwal | Educational Mission</title>
-  <meta name="title" content="About Chamber of Chemistry &amp; Founder Aarushi Kasturiwal | Educational Mission" />
-  <meta name="description" content="Learn about Chamber of Chemistry, our educational mission, teaching values, and founder Aarushi Kasturiwal — M.Sc. Organic Chemistry Gold Medallist, B.Ed., and Ph.D. Research Scholar." />
-  <meta name="keywords" content="About Chamber of Chemistry, Aarushi Kasturiwal, Chemistry Educator Dehradun, Gold Medallist Chemistry, Ph.D. Chemistry Researcher, Quality Education for All" />
+  <title>Chamber of Chemistry | Quality Chemistry Education for All | Aarushi Kasturiwal</title>
+  <meta name="title" content="Chamber of Chemistry | Quality Chemistry Education for All | Aarushi Kasturiwal" />
+  <meta name="description" content="Learn Chemistry with Chamber of Chemistry. Explore concept-based Chemistry education, Organic Chemistry, Class 11 and 12 Chemistry, NEET and JEE preparation, study resources and expert academic guidance by Aarushi Kasturiwal." />
+  <meta name="keywords" content="Chemistry Classes, Chemistry Online Classes, Organic Chemistry Classes, Class 11 Chemistry, Class 12 Chemistry, NEET Chemistry Preparation, JEE Chemistry Preparation, Chamber of Chemistry, Aarushi Kasturiwal Chemistry Educator, Dehradun Chemistry" />
   <meta name="author" content="Aarushi Kasturiwal, Chamber of Chemistry" />
-  <link rel="canonical" href="https://chamberofchemistry.com/about.html" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://chamberofchemistry.com/" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://chamberofchemistry.com/about.html" />
-  <meta property="og:title" content="About Chamber of Chemistry &amp; Aarushi Kasturiwal" />
-  <meta property="og:description" content="Discover the mission, teaching philosophy, and verified academic journey of Aarushi Kasturiwal." />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chamberofchemistry.com/" />
+  <meta property="og:title" content="Chamber of Chemistry | Quality Education for All" />
+  <meta property="og:description" content="Discover the beauty of Chemistry through clear concepts, guided learning, scientific curiosity and structured preparation." />
   <meta property="og:image" content="https://chamberofchemistry.com/assets/images/logo.svg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://chamberofchemistry.com/" />
+  <meta property="twitter:title" content="Chamber of Chemistry | Quality Education for All" />
+  <meta property="twitter:description" content="Understand Chemistry. Build Confidence. Achieve More. Concept-based Chemistry education by NEET JEE NDA specialist Aarushi Kasturiwal." />
+  <meta property="twitter:image" content="https://chamberofchemistry.com/assets/images/logo.svg" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
@@ -26,39 +34,57 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 
-  <!-- Structured Data Schema: Person & EducationalOrganization -->
+  <!-- Structured Data / Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Aarushi Kasturiwal",
-    "jobTitle": "Founder & Chemistry Educator",
-    "worksFor": {
-      "@type": "EducationalOrganization",
-      "name": "Chamber of Chemistry"
-    },
-    "alumniOf": [
+    "@graph": [
       {
-        "@type": "CollegeOrUniversity",
-        "name": "Shri Guru Ram Rai University (SGRRU)",
-        "award": "Gold Medalist - M.Sc. Organic Chemistry (2022)"
+        "@type": "EducationalOrganization",
+        "@id": "https://chamberofchemistry.com/#organization",
+        "name": "Chamber of Chemistry",
+        "alternateName": "COC",
+        "url": "https://chamberofchemistry.com/",
+        "logo": "https://chamberofchemistry.com/assets/images/logo.svg",
+        "slogan": "Quality Education for All",
+        "description": "Educational platform dedicated to making Chemistry engaging, understandable, and accessible through concept-based learning, structured study materials, and examination guidance.",
+        "founder": {
+          "@type": "Person",
+          "@id": "https://chamberofchemistry.com/#founder",
+          "name": "Aarushi Kasturiwal",
+          "jobTitle": "Founder & Chemistry Educator",
+          "alumniOf": [
+            {
+              "@type": "EducationalOrganization",
+              "name": "Shri Guru Ram Rai University (SGRRU)"
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Kendriya Vidyalaya Ordinance Factory Dehradun"
+            }
+          ],
+          "hasCredential": [
+            "M.Sc. in Organic Chemistry (Gold Medallist)",
+            "Bachelor of Education (B.Ed.)",
+            "M.A. Education",
+            "Ph.D. Research Scholar"
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dehradun",
+          "addressRegion": "Uttarakhand",
+          "addressCountry": "IN"
+        }
       },
       {
-        "@type": "CollegeOrUniversity",
-        "name": "Indira Gandhi National Open University (IGNOU)",
-        "award": "M.A. Education (2026)"
-      }
-    ],
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Master of Science in Organic Chemistry",
-        "recognizedBy": "SGRRU"
-      },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Bachelor of Education (B.Ed.)",
-        "recognizedBy": "SGRRU"
+        "@type": "WebSite",
+        "@id": "https://chamberofchemistry.com/#website",
+        "url": "https://chamberofchemistry.com/",
+        "name": "Chamber of Chemistry",
+        "publisher": {
+          "@id": "https://chamberofchemistry.com/#organization"
+        }
       }
     ]
   }
@@ -67,18 +93,18 @@
 <body>
 
   <!-- ==========================================================================
-       Navigation Bar
+       Site Navigation Bar
        ========================================================================== -->
-  <header class="site-header dark-mode-header scrolled" id="main-header">
+  <header class="site-header header-hero-dark" id="main-header">
     <div class="container">
       <nav class="navbar" aria-label="Main Navigation">
         <a href="index.html" class="nav-brand" aria-label="Chamber of Chemistry Home">
-          <img src="assets/images/logo-light.svg" alt="Chamber of Chemistry Logo" class="nav-logo" />
+          <img src="assets/images/logo-light.svg" alt="Chamber of Chemistry Logo" class="nav-logo" id="site-logo" />
         </a>
 
         <ul class="nav-menu" id="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="courses.html" class="nav-link">Courses</a></li>
           <li><a href="chemistry-experience.html" class="nav-link">Chemistry 3D Lab</a></li>
           <li><a href="resources.html" class="nav-link">Resources</a></li>
@@ -100,29 +126,89 @@
   </header>
 
   <!-- ==========================================================================
-       About Header Banner
+       Hero Section with 3D Canvas
        ========================================================================== -->
-  <main style="padding-top: 100px;">
-    <section class="section-tight bg-navy" style="background: radial-gradient(circle at 80% 20%, #1e4566 0%, #18324B 60%, #0c1c2b 100%);">
+  <main>
+    <section class="hero" id="home-hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow-orbit" aria-hidden="true"></div>
+
       <div class="container">
-        <div style="max-width: 800px;">
-          <span class="badge-tag navy-mode">Our Identity &amp; Pedagogy</span>
-          <h1 class="section-title" style="color: #FFFFFF; font-size: 2.8rem; margin-bottom: 16px;">
-            About Chamber of Chemistry
-          </h1>
-          <p class="section-subtitle" style="color: #CBD5E1; font-size: 1.15rem;">
-            Dedicated to making Chemistry engaging, understandable and connected to real student learning needs.
-          </p>
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="pulse-dot"></span>
+              <span>Academic Excellence • Concept-Based Chemistry</span>
+            </div>
+
+            <h1 class="hero-title">
+              Chemistry Is Easier When You <span class="highlight-gold">Understand It.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Discover the beauty of Chemistry through clear concepts, guided learning, scientific curiosity and structured preparation.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="courses.html" class="btn btn-primary btn-lg">Explore Courses</a>
+              <a href="about.html#founder" class="btn btn-secondary btn-lg">Meet Our Founder</a>
+            </div>
+
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <span class="metric-value">Gold Medallist</span>
+                <span class="metric-label">M.Sc. Organic Chemistry Mentorship</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">NEET &amp; JEE</span>
+                <span class="metric-label">Specialised Conceptual Curriculum</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-value">Concept-First</span>
+                <span class="metric-label">Zero Rote Memorisation Pedagogy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 3D Visual -->
+          <div class="hero-visual">
+            <!-- Floating Molecular Badges -->
+            <div class="floating-molecule-pill floating-pill-1">
+              <span style="color: #38BDF8; font-weight: 800;">C₆H₆</span>
+              <span>Aromatic Resonance</span>
+            </div>
+            <div class="floating-molecule-pill floating-pill-2">
+              <span style="color: #D5A84B; font-weight: 800;">H₂O</span>
+              <span>Polar Geometry (104.5°)</span>
+            </div>
+
+            <div class="hero-canvas-wrap">
+              <canvas id="hero-chemistry-canvas" aria-label="Interactive 3D Atom & Molecular orbital simulation. Drag to rotate."></canvas>
+              <div class="canvas-controls-overlay">
+                <span class="canvas-hint">Drag to orbit 3D space</span>
+                <button type="button" class="canvas-toggle-btn" id="hero-sim-toggle">View Molecular Mesh</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================================================
-         Vision, Mission & Purpose
+         Section 2 — Welcome to Chamber of Chemistry (Editorial Layout)
          ========================================================================== -->
-    <section class="section">
+    <section class="section bg-soft" id="welcome-coc">
       <div class="container">
-        <!-- Official Laboratory Brand Banner -->
+        <div class="section-header">
+          <span class="badge-tag">Academic Initiative</span>
+          <h2 class="section-title">Welcome to Chamber of Chemistry</h2>
+          <p class="section-subtitle">
+            Understand Chemistry. Build Confidence. Achieve More.
+          </p>
+        </div>
+
+        <!-- Official Brand Laboratory Banner -->
         <div class="brand-visual-banner">
           <img 
             src="assets/images/coc-lab-welcome-clean.jpg" 
@@ -133,88 +219,50 @@
           />
         </div>
 
-        <div class="about-intro-grid" style="align-items: stretch; margin-bottom: 72px;">
-          <!-- Left Column: Brand Vision & Editorial Statement -->
-          <div class="intro-quote-card" style="display: flex; flex-direction: column; justify-content: center;">
-            <span class="badge-tag" style="margin-bottom: 16px;">Educational Initiative</span>
+        <div class="about-intro-grid">
+          <!-- Left Editorial Quote -->
+          <div class="intro-quote-card">
             <p class="brand-lead-text">
-              “Chamber of Chemistry was established on the firm belief that every difficult topic becomes manageable when it is explained with clarity, patience and the right learning approach.”
+              “Chamber of Chemistry is an educational initiative created with the belief that quality learning should be accessible to every student.”
             </p>
             <p class="brand-body-text">
-              Through concept-based teaching, structured study material and regular practice, we seek to help students strengthen their fundamentals and approach examinations with genuine confidence.
+              Our aim is to make Chemistry engaging, understandable and connected to real learning needs. Through concept-based teaching, structured study material and regular practice, we seek to help students strengthen their fundamentals and approach examinations with confidence.
             </p>
             <p class="brand-body-text" style="margin-bottom: 0;">
-              We encourage curiosity, independent thinking and consistent effort, fostering a supportive environment where asking questions is celebrated and scientific reasoning takes precedence over rote memorisation.
+              At COC, we believe that every difficult topic becomes manageable when it is explained with clarity, patience and the right learning approach. We encourage curiosity, independent thinking and consistent effort.
             </p>
           </div>
 
-          <!-- Right Column: Vision & Mission Cards -->
-          <div class="mission-vision-wrapper">
-            <div class="editorial-card gold-theme">
-              <div class="editorial-card-header">
-                <div class="card-icon-round">👁️</div>
-                <h3>Our Vision</h3>
-              </div>
-              <p>
-                To build a trusted and accessible Chemistry learning platform that empowers students to understand the subject deeply, perform confidently in academic and competitive examinations, and develop a lasting interest in science.
-              </p>
+          <!-- Right Core Values Grid -->
+          <div class="values-grid">
+            <div class="value-pill-card">
+              <div class="value-icon">💡</div>
+              <h3 class="value-title">Clarity</h3>
+              <p class="value-desc">Explain the 'why' behind every chemical principle and reaction mechanism.</p>
             </div>
 
-            <div class="editorial-card">
-              <div class="editorial-card-header">
-                <div class="card-icon-round">🎯</div>
-                <h3>Our Mission</h3>
-              </div>
-              <ul class="mission-list">
-                <li><span class="check-bullet">✔</span> Make Chemistry concepts clear, logical and approachable.</li>
-                <li><span class="check-bullet">✔</span> Provide structured learning support for school and competitive-examination students.</li>
-                <li><span class="check-bullet">✔</span> Encourage conceptual understanding instead of rote memorisation.</li>
-                <li><span class="check-bullet">✔</span> Offer useful learning resources and opportunities for regular practice.</li>
-                <li><span class="check-bullet">✔</span> Create a positive learning environment where students feel supported and motivated.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- The 5 Core Teaching Values -->
-        <div>
-          <div class="section-header text-left">
-            <span class="badge-tag gold">Pedagogical Framework</span>
-            <h2 class="section-title">Our Teaching Values</h2>
-            <p class="section-subtitle">
-              Every lecture, study sheet and problem set produced by Chamber of Chemistry is guided by five foundational principles:
-            </p>
-          </div>
-
-          <div class="why-grid" style="grid-template-columns: repeat(5, 1fr);">
-            <div class="why-card">
-              <div class="why-icon-box">💡</div>
-              <h3 class="why-title">Clarity</h3>
-              <p class="why-desc">Explain the 'why' behind every concept. From orbital overlap to equilibrium shifts, students learn the root cause of every phenomenon.</p>
+            <div class="value-pill-card gold-accent">
+              <div class="value-icon">🔄</div>
+              <h3 class="value-title">Consistency</h3>
+              <p class="value-desc">Encourage regular study, systematic revision and disciplined problem practice.</p>
             </div>
 
-            <div class="why-card">
-              <div class="why-icon-box">🔄</div>
-              <h3 class="why-title">Consistency</h3>
-              <p class="why-desc">Encourage regular study, revision and disciplined problem practice to build lasting long-term academic memory.</p>
+            <div class="value-pill-card gold-accent">
+              <div class="value-icon">🌍</div>
+              <h3 class="value-title">Accessibility</h3>
+              <p class="value-desc">Make quality educational support available to a wider student community.</p>
             </div>
 
-            <div class="why-card">
-              <div class="why-icon-box">🌍</div>
-              <h3 class="why-title">Accessibility</h3>
-              <p class="why-desc">Make quality educational support available to a wider student community through open learning initiatives.</p>
+            <div class="value-pill-card">
+              <div class="value-icon">⚖️</div>
+              <h3 class="value-title">Integrity</h3>
+              <p class="value-desc">Communicate course details, results and academic guidance honestly and transparently.</p>
             </div>
 
-            <div class="why-card">
-              <div class="why-icon-box">⚖️</div>
-              <h3 class="why-title">Integrity</h3>
-              <p class="why-desc">Communicate course details, syllabus expectations, results and student feedback honestly and without exaggeration.</p>
-            </div>
-
-            <div class="why-card">
-              <div class="why-icon-box">🔬</div>
-              <h3 class="why-title">Curiosity</h3>
-              <p class="why-desc">Connect textbook Chemistry with laboratory methods and fascinating chemical reactions occurring in everyday life.</p>
+            <div class="value-pill-card" style="grid-column: span 2;">
+              <div class="value-icon">🔬</div>
+              <h3 class="value-title">Curiosity</h3>
+              <p class="value-desc">Connect textbook Chemistry with laboratory insights and fascinating phenomena in everyday life.</p>
             </div>
           </div>
         </div>
@@ -222,26 +270,228 @@
     </section>
 
     <!-- ==========================================================================
-         Founder Profile Section — Aarushi Kasturiwal (Full Verified Biography)
+         Section 3 — What You Can Learn (Featured Courses)
+         ========================================================================== -->
+    <section class="section" id="featured-courses">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag gold">Structured Curricula</span>
+          <h2 class="section-title">Explore Your Learning Journey</h2>
+          <p class="section-subtitle">
+            Comprehensive Chemistry programmes tailored for school board examinations, competitive entrances, and deep conceptual mastery.
+          </p>
+        </div>
+
+        <div class="courses-grid">
+          <!-- Course 1: Class 11 Chemistry -->
+          <article class="course-card">
+            <div class="course-card-top">
+              <div class="course-icon-wrap" style="background: rgba(45, 111, 145, 0.1);">
+                <img src="assets/icons/class11-chem.svg" alt="Class 11 Chemistry icon" width="46" height="46" />
+              </div>
+              <span class="course-category-badge">School Board</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-title">Class 11 Chemistry</h3>
+              <div class="course-target">Class 11 CBSE, ICSE &amp; State Boards</div>
+              <p class="course-desc">
+                Build strong fundamentals across the prescribed syllabus. Master atomic structure, chemical bonding, thermodynamics and periodic properties.
+              </p>
+              <div class="course-topics-box">
+                <div class="topics-heading">Core Modules:</div>
+                <div class="topics-list">
+                  <span class="topic-chip">Structure of Atom</span>
+                  <span class="topic-chip">Chemical Bonding</span>
+                  <span class="topic-chip">Thermodynamics</span>
+                  <span class="topic-chip">Equilibrium</span>
+                  <span class="topic-chip">Basic Organic</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <a href="courses.html#class-11" class="btn btn-outline-blue btn-sm">Explore Course</a>
+                <a href="contact.html?course=Class%2011%20Chemistry" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 2: Class 12 Chemistry -->
+          <article class="course-card">
+            <div class="course-card-top">
+              <div class="course-icon-wrap" style="background: rgba(213, 168, 75, 0.1);">
+                <img src="assets/icons/class12-chem.svg" alt="Class 12 Chemistry icon" width="46" height="46" />
+              </div>
+              <span class="course-category-badge" style="background: var(--color-warm-gold-light); color: var(--color-warm-gold-hover);">Board Focus</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-title">Class 12 Chemistry</h3>
+              <div class="course-target">Class 12 Board Aspirants</div>
+              <p class="course-desc">
+                Structured syllabus coverage, concept revision, step-by-step numerical problem solving and board examination answer-writing practice.
+              </p>
+              <div class="course-topics-box">
+                <div class="topics-heading">Core Modules:</div>
+                <div class="topics-list">
+                  <span class="topic-chip">Solutions</span>
+                  <span class="topic-chip">Electrochemistry</span>
+                  <span class="topic-chip">Chemical Kinetics</span>
+                  <span class="topic-chip">d &amp; f-Block</span>
+                  <span class="topic-chip">Coordination Compounds</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <a href="courses.html#class-12" class="btn btn-outline-blue btn-sm">Explore Course</a>
+                <a href="contact.html?course=Class%2012%20Chemistry" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 3: Organic Chemistry Specialization -->
+          <article class="course-card">
+            <div class="course-card-top">
+              <div class="course-icon-wrap" style="background: rgba(56, 189, 248, 0.1);">
+                <img src="assets/icons/organic-chem.svg" alt="Organic Chemistry icon" width="46" height="46" />
+              </div>
+              <span class="course-category-badge" style="background: #F0FDF4; color: #166534;">Specialization</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-title">Organic Chemistry Specialization</h3>
+              <div class="course-target">Classes 11, 12, NEET &amp; JEE</div>
+              <p class="course-desc">
+                In-depth conceptual mastery of General Organic Chemistry (GOC), isomerism, curly-arrow reaction mechanisms, hydrocarbons and functional groups.
+              </p>
+              <div class="course-topics-box">
+                <div class="topics-heading">Core Modules:</div>
+                <div class="topics-list">
+                  <span class="topic-chip">GOC &amp; Resonance</span>
+                  <span class="topic-chip">Stereochemistry</span>
+                  <span class="topic-chip">Reaction Mechanisms</span>
+                  <span class="topic-chip">Named Reactions</span>
+                  <span class="topic-chip">Reagents</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <a href="courses.html#organic" class="btn btn-outline-blue btn-sm">Explore Course</a>
+                <a href="contact.html?course=Organic%20Chemistry" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 4: NEET Chemistry -->
+          <article class="course-card">
+            <div class="course-card-top">
+              <div class="course-icon-wrap" style="background: rgba(45, 111, 145, 0.1);">
+                <img src="assets/icons/neet-chem.svg" alt="NEET Chemistry icon" width="46" height="46" />
+              </div>
+              <span class="course-category-badge">Competitive</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-title">NEET Chemistry Preparation</h3>
+              <div class="course-target">NEET Medical Aspirants</div>
+              <p class="course-desc">
+                NCERT-oriented concept teaching, exhaustive line-by-line coverage, previous-year question (PYQ) pattern analysis, and accuracy drills.
+              </p>
+              <div class="course-topics-box">
+                <div class="topics-heading">Core Modules:</div>
+                <div class="topics-list">
+                  <span class="topic-chip">NCERT Line-by-Line</span>
+                  <span class="topic-chip">PYQ Bank</span>
+                  <span class="topic-chip">Speed &amp; Accuracy</span>
+                  <span class="topic-chip">Mock Drills</span>
+                  <span class="topic-chip">Elimination Tactics</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <a href="courses.html#neet" class="btn btn-outline-blue btn-sm">Explore Course</a>
+                <a href="contact.html?course=NEET%20Chemistry" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 5: JEE Chemistry -->
+          <article class="course-card">
+            <div class="course-card-top">
+              <div class="course-icon-wrap" style="background: rgba(213, 168, 75, 0.1);">
+                <img src="assets/icons/jee-chem.svg" alt="JEE Chemistry icon" width="46" height="46" />
+              </div>
+              <span class="course-category-badge">Competitive</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-title">JEE Chemistry Preparation</h3>
+              <div class="course-target">JEE Main &amp; Advanced Aspirants</div>
+              <p class="course-desc">
+                Conceptual depth, rigorous multi-concept problem solving, advanced physical numericals, and topic-wise competitive practice.
+              </p>
+              <div class="course-topics-box">
+                <div class="topics-heading">Core Modules:</div>
+                <div class="topics-list">
+                  <span class="topic-chip">Multi-Concept Problems</span>
+                  <span class="topic-chip">Advanced Kinetics</span>
+                  <span class="topic-chip">Thermodynamics</span>
+                  <span class="topic-chip">Inorganic Logic</span>
+                  <span class="topic-chip">PYQ Analysis</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <a href="courses.html#jee" class="btn btn-outline-blue btn-sm">Explore Course</a>
+                <a href="contact.html?course=JEE%20Chemistry" class="btn btn-primary btn-sm">Enquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Interactive Chemistry Lab Promotion Card -->
+          <article class="course-card" style="background: linear-gradient(135deg, #18324B 0%, #1e4566 100%); color: #FFFFFF;">
+            <div class="course-card-top" style="background: transparent; border-bottom: 1px solid rgba(255,255,255,0.12);">
+              <div class="course-icon-wrap" style="background: rgba(56, 189, 248, 0.2);">
+                <span style="font-size: 1.8rem;">🔬</span>
+              </div>
+              <span class="course-category-badge" style="background: rgba(213, 168, 75, 0.2); color: var(--color-warm-gold);">Interactive Lab</span>
+            </div>
+            <div class="course-card-body">
+              <h3 class="course-title" style="color: #FFFFFF;">3D Chemistry &amp; Periodic Table</h3>
+              <div class="course-target" style="color: var(--color-cyan);">Hands-On Scientific Visuals</div>
+              <p class="course-desc" style="color: #CBD5E1;">
+                Explore real 3D chemical molecules, ball-and-stick spatial bonds, and our interactive 118-element IUPAC periodic table explorer.
+              </p>
+              <div class="course-topics-box" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.1);">
+                <div class="topics-heading" style="color: var(--color-warm-gold);">Key Features:</div>
+                <div class="topics-list">
+                  <span class="topic-chip" style="background: rgba(255,255,255,0.15); color: #FFF; border: none;">3D Ball &amp; Stick</span>
+                  <span class="topic-chip" style="background: rgba(255,255,255,0.15); color: #FFF; border: none;">118 Elements</span>
+                  <span class="topic-chip" style="background: rgba(255,255,255,0.15); color: #FFF; border: none;">Everyday Chemistry</span>
+                </div>
+              </div>
+              <div class="course-card-footer">
+                <a href="chemistry-experience.html" class="btn btn-primary btn-sm" style="width: 100%;">Open Chemistry Lab →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 4 — Meet the Founder Snapshot (Aarushi Kasturiwal)
          ========================================================================== -->
     <section class="section founder-section" id="founder">
       <div class="founder-bg-orbit" aria-hidden="true"></div>
 
       <div class="container">
         <div class="founder-grid">
-          <!-- Portrait Frame with Molecular Accents -->
+          <!-- Portrait Container -->
           <div class="founder-photo-container">
             <div class="founder-photo-frame">
+              <!-- Uses founder's photograph when provided; falls back gracefully to academic crest artwork -->
               <img 
                 src="assets/images/aarushi-kasturiwal.jpg" 
                 onerror="this.onerror=null; this.src='assets/images/aarushi-placeholder.svg';" 
-                alt="Aarushi Kasturiwal - Chemistry Educator &amp; Research Scholar" 
+                alt="Aarushi Kasturiwal, Founder of Chamber of Chemistry" 
                 class="founder-img" 
                 width="500" 
                 height="600" 
               />
             </div>
 
+            <!-- Floating Verified Gold Medalist Credential Badge -->
             <div class="founder-floating-badge">
               <span class="badge-gold-medal" aria-hidden="true">🥇</span>
               <div>
@@ -251,215 +501,391 @@
             </div>
           </div>
 
-          <!-- Academic Narrative & Verified Record -->
+          <!-- Academic Profile & Narrative -->
           <div class="founder-info">
-            <span class="badge-tag navy-mode">Founder Profile</span>
-            <h2 class="founder-headline">Aarushi Kasturiwal</h2>
+            <span class="badge-tag navy-mode">Founder &amp; Educator</span>
+            <h2 class="founder-headline">Meet the Mind Behind Chamber of Chemistry</h2>
             <div class="founder-subheading">Knowledge, Research and a Passion for Teaching.</div>
 
             <p class="founder-bio">
-              Chamber of Chemistry was founded by <strong>Aarushi Kasturiwal</strong>, a Chemistry educator with a strong academic background and a passion for teaching. She holds an M.Sc. in Organic Chemistry and is a <strong>gold medallist</strong>. She has also completed a Bachelor of Education (B.Ed.), an M.A. in Education, and is currently pursuing doctoral research as a <strong>Ph.D. research scholar</strong>.
+              Chamber of Chemistry was founded by <strong>Aarushi Kasturiwal</strong>, a Chemistry educator with a strong academic background and a passion for teaching. She holds an M.Sc. in Organic Chemistry and is a gold medallist. She has also completed a B.Ed., an M.A. in Education, and is currently pursuing a Ph.D. as a research scholar.
             </p>
 
             <p class="founder-bio">
-              Her academic and research interests include Organic Chemistry, spectroscopy and the study of natural products as green corrosion inhibitors. Her research work involves the use of spectroscopic characterisation techniques such as <strong>¹H NMR (Proton Nuclear Magnetic Resonance), UV–Visible spectroscopy and FTIR (Fourier Transform Infrared Spectroscopy)</strong> to investigate chemical compounds and their interactions.
+              Her academic and research interests include Organic Chemistry, spectroscopy and the study of natural products as green corrosion inhibitors. Her research work involves the use of spectroscopic characterisation techniques such as <strong>¹H NMR, UV–Visible spectroscopy and FTIR</strong> to investigate chemical compounds and their interactions.
             </p>
 
-            <p class="founder-bio">
-              Alongside her academic journey, she has extensive teaching and educational administration experience across Dehradun since 2021, with an abiding interest in making Chemistry easier for students through clear explanations, conceptual learning and structured preparation. Through Chamber of Chemistry, she brings together academic understanding, effective teaching and accessible learning resources.
-            </p>
+            <!-- Verified Credential Cards -->
+            <div class="credentials-grid">
+              <div class="credential-item">
+                <div class="credential-label">Academic Qualifications</div>
+                <div class="credential-val">M.Sc. Organic Chemistry (Gold Medallist)</div>
+                <div class="credential-detail">B.Ed. (SGRRU 2024) • M.A. Education (IGNOU 2026)</div>
+              </div>
 
-            <!-- Verified Academic Timeline -->
-            <div style="margin-top: 16px; margin-bottom: 32px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 24px;">
-              <h4 style="font-size: 0.85rem; font-weight: 800; color: var(--color-warm-gold); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 16px;">
-                Verified Educational Background
-              </h4>
-              <ul style="display: flex; flex-direction: column; gap: 12px; font-size: 0.92rem; color: #CBD5E1;">
-                <li><strong style="color: #FFF;">• Ph.D. Research Scholar (2026–Present):</strong> Advanced research in green corrosion inhibitors &amp; natural product characterisation.</li>
-                <li><strong style="color: #FFF;">• M.Sc. Organic Chemistry (Gold Medallist) — SGRRU 2022:</strong> Graduated at the top of the university with distinction in Organic Chemistry.</li>
-                <li><strong style="color: #FFF;">• B.Ed. — SGRRU 2024:</strong> Professional degree in secondary education pedagogy and learning methodologies.</li>
-                <li><strong style="color: #FFF;">• M.A. Education — IGNOU 2026:</strong> Advanced study in curriculum planning, student evaluation and educational psychology.</li>
-                <li><strong style="color: #FFF;">• B.Sc. (Chemistry, Botany, Zoology) — 2020:</strong> Fundamental science degree establishing multi-disciplinary laboratory foundations.</li>
-                <li><strong style="color: #FFF;">• Qualified NEET (2016 &amp; 2017) &amp; Qualified AFCAT Twice:</strong> Demonstrating competitive exam expertise and deep familiarity with entrance examination question formats.</li>
-              </ul>
-            </div>
+              <div class="credential-item">
+                <div class="credential-label">Doctoral Research</div>
+                <div class="credential-val">Ph.D. Research Scholar</div>
+                <div class="credential-detail">Green Corrosion Inhibition &amp; Natural Products</div>
+              </div>
 
-            <!-- Leadership & Teaching Experience -->
-            <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 32px;">
-              <h4 style="font-size: 0.85rem; font-weight: 800; color: var(--color-cyan); text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 16px;">
-                Institutional Leadership &amp; Teaching Experience
-              </h4>
-              <p style="font-size: 0.92rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 14px;">
-                Since 2021, Aarushi Kasturiwal has taught and mentored aspirants for Classes XI–XII, NEET, JEE, and competitive national examinations (NDA, CDS, AFCAT, IMU-CET, RIMC) across premier educational institutions in Dehradun.
-              </p>
-              <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: #94A3B8;">
-                <li>• <strong>Director</strong> — Divine Defence Academy (Institutional leadership, academic supervision &amp; student mentoring).</li>
-                <li>• <strong>Centre Head</strong> — Dehradun Naval and Defence Academy (Academic planning, classroom teaching &amp; parent counselling).</li>
-                <li>• <strong>Coordinator</strong> — V Kumar's Academy (Academic coordination, scheduling &amp; student communication).</li>
-                <li>• <strong>Board Copy Evaluator</strong> — Extensive official experience checking and grading secondary school board examination answer scripts.</li>
-              </ul>
-            </div>
+              <div class="credential-item">
+                <div class="credential-label">Spectroscopic Techniques</div>
+                <div class="credential-val">¹H NMR, UV–Vis &amp; FTIR</div>
+                <div class="credential-detail">Molecular structure elucidation and spectral characterisation</div>
+              </div>
 
-            <div>
-              <a href="contact.html" class="btn btn-primary">Connect with Aarushi Kasturiwal →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Teaching in Action & Laboratory Pedagogy Showcase
-         ========================================================================== -->
-    <section class="section" id="teaching-gallery" style="background-color: #FFFFFF;">
-      <div class="container">
-        <div class="section-header">
-          <span class="badge-tag gold">Authentic Class &amp; Laboratory Pedagogy</span>
-          <h2 class="section-title">Teaching in Action</h2>
-          <p class="section-subtitle">
-            Real classroom engagement, hands-on laboratory demonstrations, and structured mentorship led by Aarushi Kasturiwal across Dehradun institutions.
-          </p>
-        </div>
-
-        <div class="academic-gallery-grid">
-          <!-- Photo 1: Mentorship with students -->
-          <div class="gallery-photo-card">
-            <div class="gallery-photo-img-wrap">
-              <img 
-                src="assets/images/aarushi-students-mentorship.jpg" 
-                alt="Aarushi Kasturiwal with students, academic trophies and CBSE papers" 
-                loading="lazy" 
-              />
-            </div>
-            <div class="gallery-photo-caption">
-              <h3 class="gallery-photo-title">Student Mentorship &amp; Academic Guidance</h3>
-              <p class="gallery-photo-desc">Preparing Class 11, 12 and entrance examination aspirants with structured problem-solving and patient doubt-clearing.</p>
-            </div>
-          </div>
-
-          <!-- Photo 2: Practical qualitative analysis -->
-          <div class="gallery-photo-card">
-            <div class="gallery-photo-img-wrap">
-              <img 
-                src="assets/images/aarushi-brown-ring-test-clean.jpg" 
-                alt="Practical Chemistry: Nitrate Anion Brown Ring Test Demonstration" 
-                style="object-position: center 30%;" 
-                loading="lazy" 
-              />
-            </div>
-            <div class="gallery-photo-caption">
-              <h3 class="gallery-photo-title">Qualitative Salt Analysis Demonstration</h3>
-              <p class="gallery-photo-desc">Live demonstration of the Brown Ring Test for nitrate anion identification ($[Fe(H_2O)_5(NO)]^{2+}$).</p>
-            </div>
-          </div>
-
-          <!-- Photo 3: Laboratory Guidance -->
-          <div class="gallery-photo-card">
-            <div class="gallery-photo-img-wrap">
-              <img 
-                src="assets/images/aarushi-lab-instruction.jpg" 
-                alt="Hands-on Chemistry Laboratory Reagent Guidance" 
-                loading="lazy" 
-              />
-            </div>
-            <div class="gallery-photo-caption">
-              <h3 class="gallery-photo-title">Hands-on Laboratory Instruction</h3>
-              <p class="gallery-photo-desc">Guiding students through proper chemical safety, reagent handling, and observation protocols.</p>
-            </div>
-          </div>
-
-          <!-- Photo 4: Smartboard lecture -->
-          <div class="gallery-photo-card">
-            <div class="gallery-photo-img-wrap">
-              <img 
-                src="assets/images/aarushi-smartboard-lecture.jpg" 
-                alt="Digital Interactive Smartboard Chemistry Class" 
-                style="object-position: center 40%;" 
-                loading="lazy" 
-              />
-            </div>
-            <div class="gallery-photo-caption">
-              <h3 class="gallery-photo-title">Interactive Smartboard Lectures</h3>
-              <p class="gallery-photo-desc">Connecting theoretical inorganic reaction steps with live observation tables and deductions.</p>
-            </div>
-          </div>
-
-          <!-- Photo 5: Quantitative Titration -->
-          <div class="gallery-photo-card">
-            <div class="gallery-photo-img-wrap">
-              <img 
-                src="assets/images/aarushi-titration-research.jpg" 
-                alt="Volumetric Titration and Analytical Chemistry" 
-                style="object-position: center 15%;" 
-                loading="lazy" 
-              />
-            </div>
-            <div class="gallery-photo-caption">
-              <h3 class="gallery-photo-title">Volumetric Titration &amp; Analysis</h3>
-              <p class="gallery-photo-desc">Precise burette titration measuring end-points and reaction stoichiometry.</p>
-            </div>
-          </div>
-
-          <!-- Photo 6: Academic Direction -->
-          <div class="gallery-photo-card">
-            <div class="gallery-photo-img-wrap">
-              <img 
-                src="assets/images/aarushi-director-desk.jpg" 
-                alt="Academic Administration and Curriculum Planning Desk" 
-                style="object-position: center 20%;" 
-                loading="lazy" 
-              />
-            </div>
-            <div class="gallery-photo-caption">
-              <h3 class="gallery-photo-title">Academic Leadership &amp; Planning</h3>
-              <p class="gallery-photo-desc">Extensive administrative and institutional management experience as Director and Centre Head.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Educational Outreach & "Quality Education for All"
-         ========================================================================== -->
-    <section class="section bg-soft">
-      <div class="container">
-        <div class="section-header">
-          <span class="badge-tag">Community &amp; Outreach</span>
-          <h2 class="section-title">Promoting Free &amp; Accessible Education</h2>
-          <p class="section-subtitle">
-            How Chamber of Chemistry is leveraging digital media to dismantle barriers in science learning.
-          </p>
-        </div>
-
-        <div style="max-width: 900px; margin: 0 auto; background: var(--color-white); border-radius: var(--radius-xl); padding: 48px; border: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center;">
-            <div>
-              <span class="badge-tag gold" style="margin-bottom: 12px;">Social Initiative</span>
-              <h3 style="font-size: 1.45rem; font-weight: 800; color: var(--color-navy); margin-bottom: 14px;">
-                #LetsPromoteFreeEducation
-              </h3>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 16px;">
-                Through the Chamber of Chemistry YouTube and Instagram educational platforms, Aarushi creates concise concept-based video lessons, experiment walkthroughs, PYQ-based breakdowns and exam strategy sessions for students across India.
-              </p>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7;">
-                The initiative ensures that quality Chemistry guidance remains within reach of every student, especially those from non-metro areas who lack access to top-tier physical coaching institutes.
-              </p>
-            </div>
-
-            <div style="background: var(--color-soft-grey); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border-light); text-align: center;">
-              <div style="font-size: 3rem; margin-bottom: 16px;">🧪</div>
-              <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--color-navy); margin-bottom: 8px;">
-                Follow Our Educational Content
-              </h4>
-              <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 24px;">
-                Free concept explainers, chemical reaction reels, and live doubt resolutions.
-              </p>
-              <div style="display: flex; justify-content: center; gap: 14px;">
-                <a href="https://www.youtube.com" class="btn btn-outline-blue btn-sm" target="_blank" rel="noopener noreferrer">YouTube Channel</a>
-                <a href="https://www.instagram.com" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Instagram (@COC)</a>
+              <div class="credential-item">
+                <div class="credential-label">Competitive &amp; Evaluation Record</div>
+                <div class="credential-val">Qualified NEET Twice &amp; AFCAT Twice</div>
+                <div class="credential-detail">Experienced Board copy evaluator &amp; mentor since 2021</div>
               </div>
             </div>
+
+            <div>
+              <a href="about.html#founder" class="btn btn-primary">Discover Her Journey →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 5 — Why Choose Chamber of Chemistry?
+         ========================================================================== -->
+    <section class="section bg-soft" id="why-coc">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">Academic Approach</span>
+          <h2 class="section-title">Why Learn With COC?</h2>
+          <p class="section-subtitle">
+            A student-focused pedagogical model designed to transform Chemistry from a daunting subject into a logical, deeply rewarding discipline.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Pillar 1: Feature Card (spans 2) -->
+          <div class="why-card">
+            <div class="why-icon-box">🎯</div>
+            <h3 class="why-title">Concept-First Learning</h3>
+            <p class="why-desc">
+              We deconstruct complex chemical concepts into intuitive, first-principles logic. Instead of mechanically memorising reactions, students understand electron flow, thermodynamic driving forces, and molecular stability.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="why-card">
+            <div class="why-icon-box">📑</div>
+            <h3 class="why-title">Structured Lessons</h3>
+            <p class="why-desc">Topic-wise progressive learning where each module builds logically upon the previous foundation.</p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="why-card">
+            <div class="why-icon-box">🏛️</div>
+            <h3 class="why-title">Strong Fundamentals</h3>
+            <p class="why-desc">Deep focus on NCERT clarity, fundamental periodic trends, atomic orbitals and bonding models.</p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="why-card">
+            <div class="why-icon-box">✍️</div>
+            <h3 class="why-title">Guided Practice</h3>
+            <p class="why-desc">Step-by-step problem deconstruction with curated NCERT, board and previous-year competitive question sets.</p>
+          </div>
+
+          <!-- Pillar 5 -->
+          <div class="why-card">
+            <div class="why-icon-box">🔁</div>
+            <h3 class="why-title">Revision Support</h3>
+            <p class="why-desc">Comprehensive chapter notes, concise formula summaries, and visual reaction pathways for rapid recall.</p>
+          </div>
+
+          <!-- Pillar 6 -->
+          <div class="why-card">
+            <div class="why-icon-box">📚</div>
+            <h3 class="why-title">Accessible Resources</h3>
+            <p class="why-desc">Free, verified academic materials created to promote quality education for all students regardless of location.</p>
+          </div>
+
+          <!-- Pillar 7 -->
+          <div class="why-card">
+            <div class="why-icon-box">🤝</div>
+            <h3 class="why-title">Student-Focused Teaching</h3>
+            <p class="why-desc">A patient, supportive environment encouraging active curiosity, question-asking and independent scientific thinking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 6 — Free Learning Resources Snapshot
+         ========================================================================== -->
+    <section class="section" id="resources-snapshot">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag gold">Free Academic Material</span>
+          <h2 class="section-title">Learn More. Explore More.</h2>
+          <p class="section-subtitle">
+            Authentic study notes, formula sheets, and reaction maps developed to assist your daily study and examination preparation.
+          </p>
+        </div>
+
+        <div class="resources-grid">
+          <!-- Resource 1 -->
+          <div class="resource-card">
+            <span class="resource-type-tag">Organic Chemistry</span>
+            <h3 class="resource-title">GOC &amp; Electronic Effects Revision Summary</h3>
+            <p class="resource-desc">
+              Comprehensive conceptual summary covering Inductive Effect, Resonance, Hyperconjugation, and Carbocation Stability rules.
+            </p>
+            <div class="resource-card-actions">
+              <span class="file-info">📄 PDF Study Summary</span>
+              <button type="button" class="btn btn-outline-blue btn-sm resource-preview-btn" data-res-key="goc">Preview Notes</button>
+            </div>
+          </div>
+
+          <!-- Resource 2 -->
+          <div class="resource-card">
+            <span class="resource-type-tag" style="background: var(--color-warm-gold-light); color: var(--color-warm-gold-hover);">Physical Chemistry</span>
+            <h3 class="resource-title">Thermodynamics &amp; Thermochemistry Formula Sheet</h3>
+            <p class="resource-desc">
+              High-yield formula cheat sheet with sign conventions for work, internal energy, enthalpy, entropy, and Gibbs free energy equations.
+            </p>
+            <div class="resource-card-actions">
+              <span class="file-info">📄 Formula Sheet</span>
+              <button type="button" class="btn btn-outline-blue btn-sm resource-preview-btn" data-res-key="thermo">Preview Notes</button>
+            </div>
+          </div>
+
+          <!-- Resource 3 -->
+          <div class="resource-card">
+            <span class="resource-type-tag">Inorganic Chemistry</span>
+            <h3 class="resource-title">Coordination Compounds: CFT &amp; Isomerism Chart</h3>
+            <p class="resource-desc">
+              Visual crystal field splitting diagrams for octahedral and tetrahedral complexes, spectrochemical series, and isomerism classification.
+            </p>
+            <div class="resource-card-actions">
+              <span class="file-info">📄 Master Chart</span>
+              <button type="button" class="btn btn-outline-blue btn-sm resource-preview-btn" data-res-key="coordination">Preview Notes</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="resources.html" class="btn btn-navy">Browse All Free Resources &amp; Practice MCQs →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 7 — Chemistry Learning Philosophy (Authentic Academic Trust)
+         ========================================================================== -->
+    <section class="section bg-soft" id="philosophy">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge-tag">Academic Trust</span>
+          <h2 class="section-title">Our Learning Philosophy</h2>
+          <p class="section-subtitle">
+            Why true achievement in Chemistry stems from conceptual clarity rather than mechanical rote memorisation.
+          </p>
+        </div>
+
+        <div class="philosophy-card">
+          <div class="philosophy-quote-row">
+            <div class="philosophy-quote-mark">❝</div>
+            <p class="philosophy-lead">
+              Chemistry is neither an arbitrary collection of disconnected formulas nor a catalog of reactions to be learned by rote. It is the molecular language of the physical universe, governed by elegant thermodynamic principles and electron behaviours.
+            </p>
+          </div>
+          <p class="philosophy-body">
+            At Chamber of Chemistry, our pledge to students and parents is built on academic honesty and pedagogical rigour. We do not make exaggerated commercial claims. Instead, we invest our energy in providing crystal-clear explanations, rigorous NCERT foundation teaching, and a respectful learning environment where students cultivate genuine scientific curiosity and examination confidence.
+          </p>
+          <div class="philosophy-footer">
+            <div class="philosophy-signature">
+              Aarushi Kasturiwal • <span>Founder &amp; Educator, Chamber of Chemistry</span>
+            </div>
+            <div class="philosophy-hashtag">#LetsPromoteFreeEducation</div>
+          </div>
+        </div>
+
+        <!-- Mentorship in Action Showcase -->
+        <div class="mentorship-showcase">
+          <img 
+            src="assets/images/aarushi-students-mentorship.jpg" 
+            alt="Aarushi Kasturiwal mentoring students in Dehradun" 
+            width="1200" 
+            height="600" 
+            class="mentorship-img"
+            loading="lazy" 
+          />
+          <div class="mentorship-footer">
+            <div>
+              <h4 class="mentorship-title">Student Mentorship &amp; Academic Guidance</h4>
+              <p class="mentorship-desc">Fostering confidence, disciplined NCERT practice, and examination excellence across Dehradun.</p>
+            </div>
+            <span class="badge-tag gold" style="margin-bottom: 0;">#QualityEducationForAll</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section — Group Photos & Testimonials
+         ========================================================================== -->
+    <section class="section" id="group-photos-testimonials">
+      <div class="container">
+
+        <!-- Group Photos -->
+        <div class="section-header">
+          <span class="badge-tag gold">Community &amp; Classroom</span>
+          <h2 class="section-title">Learning Together, Growing Together</h2>
+          <p class="section-subtitle">
+            Moments from our interactive sessions, mentorship programmes and academic workshops.
+          </p>
+        </div>
+
+        <div class="group-photos-grid">
+          <figure class="group-photo-figure">
+            <img
+              src="assets/images/interactive-clasroom-session.jpeg"
+              alt="Students attending a Chamber of Chemistry interactive classroom session"
+              class="group-photo-img"
+              loading="lazy"
+              width="800"
+              height="500"
+            />
+            <figcaption class="group-photo-caption">
+              <strong>Interactive Classroom Session</strong> — Concept-building workshop with senior secondary students.
+            </figcaption>
+          </figure>
+
+          <figure class="group-photo-figure">
+            <img
+              src="assets/images/with-students.jpeg"
+              alt="Students and mentor at a Chamber of Chemistry academic mentorship meet"
+              class="group-photo-img"
+              loading="lazy"
+              width="800"
+              height="500"
+            />
+            <figcaption class="group-photo-caption">
+              <strong>Mentorship Meet &amp; Greet</strong> — Guided doubt-clearing and exam strategy session in Dehradun.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="section-header" style="margin-top: 72px;">
+          <span class="badge-tag">Student Voices</span>
+          <h2 class="section-title">What Our Students Say</h2>
+          <p class="section-subtitle">
+            Honest reflections from students who have experienced the Chamber of Chemistry approach.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1 — Saurabh Panwar -->
+          <article class="testimonial-card">
+            <img
+              src="assets/images/testimonial-saurabh.jpg"
+              alt="Photo of Saurabh Panwar, Chamber of Chemistry student"
+              class="testimonial-avatar"
+              loading="lazy"
+              width="90"
+              height="90"
+            />
+            <div class="testimonial-quote-mark">❝</div>
+            <p class="testimonial-text">
+              &ldquo;The teaching methods are excellent, and the concepts are explained in a very simple and effective way. Mam is highly supportive, dedicated, and always ready to clear every doubt. I am genuinely grateful to be a part of Chamber of Chemistry — here learning becomes easier, more interesting and enjoyable. Highly recommend for every student who wants to build a strong foundation in studies.&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-name">Saurabh Panwar</div>
+              <div class="testimonial-role">Chamber of Chemistry Student</div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 — Rishika Rawat -->
+          <article class="testimonial-card">
+            <img
+              src="assets/images/testimonial-rishika.jpg"
+              alt="Photo of Rishika Rawat, Class 12 CBSE student"
+              class="testimonial-avatar"
+              loading="lazy"
+              width="90"
+              height="90"
+            />
+            <div class="testimonial-quote-mark">❝</div>
+            <p class="testimonial-text">
+              &ldquo;Aarushi Mam has been an incredible mentor and teacher. Her clear explanations make even the toughest chemistry topics so easy to understand and interesting. She is always supportive, patient, and encouraging, making sure every doubt is resolved with care. Because of her guidance, I have gained so much confidence in Chemistry and now enjoy learning it. I am truly grateful for her dedication and support!&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-name">Rishika Rawat</div>
+              <div class="testimonial-role">Class 12 CBSE • Chamber of Chemistry</div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 — Govind -->
+          <article class="testimonial-card">
+            <img
+              src="assets/images/testimonial-govind.jpg"
+              alt="Photo of Govind, Chamber of Chemistry student"
+              class="testimonial-avatar"
+              loading="lazy"
+              width="90"
+              height="90"
+            />
+            <div class="testimonial-quote-mark">❝</div>
+            <p class="testimonial-text">
+              &ldquo;My two-year journey with Chamber of Chemistry was truly a game-changer for me. Chemistry always felt like a daunting subject, but Aarushi Mam has a unique gift for breaking down the most complex mechanisms and concepts into simple, intuitive ideas. Her constant encouragement, patience with every single doubt, and structured approach built my confidence from the ground up. I am deeply grateful for her guidance throughout those two crucial years. I highly recommend Chamber of Chemistry to anyone looking to master the subject and actually enjoy learning it!&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-name">Govind</div>
+              <div class="testimonial-role">Two-Year Student • Chamber of Chemistry</div>
+            </div>
+          </article>
+
+          <!-- Testimonial 4 — Nishant -->
+          <article class="testimonial-card">
+            <img
+              src="assets/images/testimonial-nishant.jpg"
+              alt="Photo of Nishant, defence exam aspirant"
+              class="testimonial-avatar"
+              loading="lazy"
+              width="90"
+              height="90"
+            />
+            <div class="testimonial-quote-mark">❝</div>
+            <p class="testimonial-text">
+              &ldquo;I'll be honest — I was from a non-science background. I did my 12th with commerce, so I was not that good in science, especially when it came to Chemistry and its concepts. The reason is obvious. But it was very fortunate that I met Ms. Aarushi Mam while I was preparing for a defence exam. The experience was extraordinary. I would not say learning Chemistry was a cakewalk after a long time, but I would definitely say it was very easy compared to other bulky subjects. All credit and thanks go to Mam. Thank you so much!&rdquo;
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-name">Nishant</div>
+              <div class="testimonial-role">Defence Exam Aspirant</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 8 — Call-To-Action Banner
+         ========================================================================== -->
+    <section class="section bg-navy" style="background: radial-gradient(circle at 30% 50%, #204768 0%, #18324B 60%, #0d1e2e 100%);">
+      <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <span class="badge-tag navy-mode" style="margin-bottom: 20px;">Ready To Begin?</span>
+          <h2 class="section-title" style="color: #FFFFFF; font-size: 2.5rem; margin-bottom: 18px;">
+            Ready to Make Chemistry Clearer?
+          </h2>
+          <p class="section-subtitle" style="color: #CBD5E1; margin-bottom: 36px;">
+            Explore our learning programmes or contact us directly to find the right starting point for your academic and competitive preparation.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;">
+            <a href="courses.html" class="btn btn-primary btn-lg">Explore All Courses</a>
+            <a href="contact.html" class="btn btn-secondary btn-lg">Enquire / Get in Touch</a>
           </div>
         </div>
       </div>
@@ -472,6 +898,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top-grid">
+        <!-- Brand Description -->
         <div class="footer-brand-col">
           <img src="assets/images/logo-light.svg" alt="Chamber of Chemistry" class="footer-logo" />
           <p class="footer-brand-desc">
@@ -482,6 +909,7 @@
           </div>
         </div>
 
+        <!-- Quick Navigation -->
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul class="footer-links-list">
@@ -496,6 +924,7 @@
           </ul>
         </div>
 
+        <!-- Learning Areas -->
         <div class="footer-col">
           <h4>Learning Programmes</h4>
           <ul class="footer-links-list">
@@ -508,6 +937,7 @@
           </ul>
         </div>
 
+        <!-- Contact & Academic Base -->
         <div class="footer-col">
           <h4>Academic Base</h4>
           <p style="font-size: 0.92rem; color: #94A3B8; margin-bottom: 16px; line-height: 1.6;">
@@ -543,7 +973,540 @@
     </div>
   </footer>
 
+  <!-- ==========================================================================
+       Resource Preview Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="resource-preview-modal" role="dialog" aria-modal="true" aria-labelledby="modal-res-heading">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title modal-res-title" id="modal-res-heading">Resource Notes Preview</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body modal-res-body">
+        <!-- Injected via main.js -->
+      </div>
+    </div>
+  </div>
+
   <!-- Scripts -->
+  <script src="js/animations.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- ==========================================================================
+       Page-specific Styles & Mobile Responsive Fixes
+       ========================================================================== -->
+  <style>
+    /* ---------- Global overflow fix (prevents blank space on mobile) ---------- */
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img, canvas, video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ---------- Philosophy Card ---------- */
+    .philosophy-card {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      padding: 48px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .philosophy-quote-row {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+
+    .philosophy-quote-mark {
+      font-size: 2.2rem;
+      color: var(--color-warm-gold);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .philosophy-lead {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--color-navy);
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .philosophy-body {
+      font-size: 0.98rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .philosophy-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-light);
+      padding-top: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .philosophy-signature {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-navy);
+    }
+
+    .philosophy-signature span {
+      font-weight: 500;
+      color: var(--color-academic-blue);
+    }
+
+    .philosophy-hashtag {
+      font-size: 0.8125rem;
+      color: var(--color-warm-gold-hover);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ---------- Mentorship Showcase ---------- */
+    .mentorship-showcase {
+      max-width: 860px;
+      margin: 40px auto 0 auto;
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .mentorship-img {
+      width: 100%;
+      max-height: 440px;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+    }
+
+    .mentorship-footer {
+      padding: 20px 28px;
+      background: #FFFFFF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .mentorship-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--color-navy);
+      margin-bottom: 4px;
+    }
+
+    .mentorship-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    /* ---------- Group Photos Grid ---------- */
+    .group-photos-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      margin-bottom: 0;
+    }
+
+    .group-photo-figure {
+      margin: 0;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      background: #FFFFFF;
+    }
+
+    .group-photo-img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .group-photo-caption {
+      padding: 16px 22px;
+      background: #FFFFFF;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border-light);
+      line-height: 1.5;
+    }
+
+    .group-photo-caption strong {
+      color: var(--color-navy);
+    }
+
+    /* ---------- Testimonials Grid ---------- */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-xl);
+      padding: 32px 26px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(24, 50, 75, 0.1);
+    }
+
+    .testimonial-avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--color-warm-gold);
+      margin-bottom: 18px;
+      flex-shrink: 0;
+      background: #F1F5F9;
+    }
+
+    .testimonial-quote-mark {
+      font-size: 1.6rem;
+      color: var(--color-warm-gold);
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 22px;
+      flex-grow: 1;
+    }
+
+    .testimonial-author {
+      border-top: 1px solid var(--border-light);
+      padding-top: 16px;
+      width: 100%;
+    }
+
+    .testimonial-name {
+      font-weight: 800;
+      color: var(--color-navy);
+      font-size: 0.98rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* ---------- Tablet Responsive (≤ 1024px) ---------- */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero-visual {
+        max-width: 560px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .hero-canvas-wrap {
+        min-height: 320px;
+      }
+
+      .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .founder-photo-container {
+        max-width: 400px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-card[style*="span 2"] {
+        grid-column: span 2 !important;
+      }
+    }
+
+    /* ---------- Small Tablet / Large Mobile (≤ 900px) ---------- */
+    @media (max-width: 900px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .courses-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .resources-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .values-grid .value-pill-card[style*="span 2"] {
+        grid-column: span 2 !important;
+      }
+
+      .credentials-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-top-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+
+      .footer-brand-col {
+        grid-column: span 2;
+      }
+    }
+
+    /* ---------- Mobile (≤ 768px) ---------- */
+    @media (max-width: 768px) {
+      .section {
+        padding: 56px 0;
+      }
+
+      .section-title {
+        font-size: 1.65rem;
+      }
+
+      .section-header {
+        margin-bottom: 36px;
+      }
+
+      .hero {
+        padding: 100px 0 56px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+
+      .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+
+      .hero-cta-group .btn {
+        width: 100%;
+        text-align: center;
+      }
+
+      .hero-metrics {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .hero-metrics .metric-item {
+        width: 100%;
+      }
+
+      .floating-molecule-pill {
+        display: none;
+      }
+
+      .hero-canvas-wrap {
+        min-height: 280px;
+      }
+
+      .canvas-hint {
+        font-size: 0.7rem;
+      }
+
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .resources-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid .value-pill-card[style*="span 2"] {
+        grid-column: span 1 !important;
+      }
+
+      .credentials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-card[style*="span 2"] {
+        grid-column: span 1 !important;
+      }
+
+      .group-photos-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .group-photo-img {
+        height: 240px;
+      }
+
+      .philosophy-card {
+        padding: 28px 22px;
+      }
+
+      .philosophy-quote-row {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .philosophy-lead {
+        font-size: 1.02rem;
+      }
+
+      .mentorship-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .mentorship-img {
+        max-height: 300px;
+      }
+
+      .testimonial-card {
+        padding: 28px 20px 24px;
+      }
+
+      .testimonial-avatar {
+        width: 78px;
+        height: 78px;
+      }
+
+      .footer-top-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-brand-col {
+        grid-column: span 1;
+      }
+
+      .footer-bottom-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        text-align: left;
+      }
+
+      .brand-visual-banner img {
+        width: 100%;
+        height: auto;
+      }
+
+      .founder-floating-badge {
+        position: static;
+        margin-top: 16px;
+        width: 100%;
+      }
+
+      .founder-photo-container {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    /* ---------- Small Mobile (≤ 480px) ---------- */
+    @media (max-width: 480px) {
+      .container {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .hero-title {
+        font-size: 1.75rem;
+      }
+
+      .section-title {
+        font-size: 1.45rem;
+      }
+
+      .hero-badge {
+        font-size: 0.72rem;
+      }
+
+      .badge-tag {
+        font-size: 0.72rem;
+      }
+
+      .course-card-footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .course-card-footer .btn {
+        width: 100%;
+      }
+
+      .hero-canvas-wrap {
+        min-height: 240px;
+      }
+
+      .group-photo-img {
+        height: 200px;
+      }
+
+      .philosophy-hashtag {
+        font-size: 0.72rem;
+      }
+    }
+  </style>
 </body>
 </html>
